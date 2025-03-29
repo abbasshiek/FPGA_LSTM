@@ -1,0 +1,98 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=updated_weights.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/updated_weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights_dimensions.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/weights_dimensions.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=new_updated_weights.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_updated_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=block_circulant.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/block_circulant.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=block_circulant.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/block_circulant.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=activation_LUT.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/activation_LUT.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=activation_LUT.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/activation_LUT.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=lstm_tb.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=lstm_function' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7k160tfbg676-2L' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k160t-fbg676-2L'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 6.849 seconds; current allocated memory: 162.184 MB.
+INFO: [HLS 200-10] Analyzing design file 'activation_LUT.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'block_circulant.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'updated_weights.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'lstm_new.cpp' ... 
+WARNING: [HLS 207-5292] unused parameter 'array' (./weights_dimensions.h:8:31)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 137.093 seconds; current allocated memory: 162.973 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,332 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 367 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 252 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 145 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 105 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 97 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 97 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 97 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 97 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 101 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 101 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 101 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 338 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 100 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 104 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 114 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_33_3' is marked as complete unroll implied by the pipeline pragma (block_circulant.cpp:33:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_28_2' is marked as complete unroll implied by the pipeline pragma (block_circulant.cpp:28:22)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_22_1' is marked as complete unroll implied by the pipeline pragma (block_circulant.cpp:22:22)
+INFO: [HLS 214-178] Inlining function 'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 62, 10>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [62][10], int&, int&)' into 'get_lstm_weights_0_dimensions(int&, int&)' (./weights_dimensions.h:14:0)
+INFO: [HLS 214-178] Inlining function 'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 10, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [10][200], int&, int&)' into 'get_lstm_weights_1_dimensions(int&, int&)' (./weights_dimensions.h:18:0)
+INFO: [HLS 214-178] Inlining function 'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 50, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [50][200], int&, int&)' into 'get_lstm_weights_2_dimensions(int&, int&)' (./weights_dimensions.h:22:0)
+INFO: [HLS 214-178] Inlining function 'get_lstm_weights_0_dimensions(int&, int&)' into 'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' (lstm_new.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'get_lstm_weights_1_dimensions(int&, int&)' into 'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' (lstm_new.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'get_lstm_weights_2_dimensions(int&, int&)' into 'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' (lstm_new.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'lookup_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)' (lstm_new.cpp:35:0)
+WARNING: [HLS 214-450] Ignore address on register port 'input' (block_circulant.cpp:23:22)
+WARNING: [HLS 214-450] Ignore address on register port 'vla' (block_circulant.cpp:29:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla1' (block_circulant.cpp:29:38)
+WARNING: [HLS 214-450] Ignore address on register port 'vla2' (block_circulant.cpp:34:19)
+WARNING: [HLS 214-450] Ignore address on register port 'output' (lstm_new.cpp:75:12)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_64_3> at lstm_new.cpp:64:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_59_2> at lstm_new.cpp:59:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_54_1> at lstm_new.cpp:54:30 
+INFO: [HLS 214-449] Automatically partitioning array 'lstm_weights_0_txt' dimension 1 completely based on constant index. (updated_weights.cpp:6:0)
+INFO: [HLS 214-449] Automatically partitioning array 'lstm_weights_1_txt' dimension 1 completely based on constant index. (updated_weights.cpp:72:0)
+INFO: [HLS 214-449] Automatically partitioning array 'lstm_weights_2_txt' dimension 1 completely based on constant index. (updated_weights.cpp:3184:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'lstm_weights_0_txt' due to pipeline pragma (updated_weights.cpp:6:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'lstm_weights_1_txt' due to pipeline pragma (updated_weights.cpp:72:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'lstm_weights_2_txt' due to pipeline pragma (updated_weights.cpp:3184:0)
+INFO: [HLS 214-248] Applying array_partition to 'lstm_weights_2_txt': Complete partitioning on dimension 1. (updated_weights.cpp:3184:0)
+INFO: [HLS 214-248] Applying array_partition to 'lstm_weights_1_txt': Complete partitioning on dimension 1. (updated_weights.cpp:72:0)
+INFO: [HLS 214-248] Applying array_partition to 'lstm_weights_0_txt': Complete partitioning on dimension 1. (updated_weights.cpp:6:0)
+WARNING: [HLS 214-187] Cannot unroll loop 'VITIS_LOOP_33_3' (block_circulant.cpp:33:22) in function 'circulant_mvm' as it has a variable trip count (block_circulant.cpp:33:22)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 23.307 seconds; current allocated memory: 162.973 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.021 seconds; current allocated memory: 162.973 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.752 seconds; current allocated memory: 162.973 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-61] block_circulant.cpp:29: unsupported memory access on variable 'fft_input' which is (or contains) an array with unknown size at compile time.
+INFO: [SYNCHK 200-10] 1 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 6 seconds. Total CPU system time: 3 seconds. Total elapsed time: 168.629 seconds; peak allocated memory: 162.973 MB.

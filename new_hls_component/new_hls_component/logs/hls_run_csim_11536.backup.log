@@ -1,0 +1,85 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Downloads/updated_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights_dimensions.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/weights_dimensions.h' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=lstm_tb.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7k160tfbg676-2L' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k160t-fbg676-2L'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying ini 'csim.O=0' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls-debug.cfg(3)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.clean=1' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls-debug.cfg(4)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying ini 'csim.setup=1' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls-debug.cfg(2)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [SIM 211-200] Skipping execution of Code Analyzer due to 'setup' option, executing classic HLS C simulation
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../lstm_tb.cpp in debug mode
+csim.mk:88: recipe for target 'obj/lstm_tb.o' failed
+In file included from ../../../../lstm_tb.cpp:1:
+In file included from ../../../../weights_dimensions.h:4:
+In file included from ../../../../updated_weights.h:4:
+In file included from D:/xilinx/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+In file included from ../../../../lstm_tb.cpp:2:
+../../../../lstm_new.cpp:37:23: error: incompatible pointer types assigning to 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]') from 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]')
+            weights = reinterpret_cast<const data_t (*)[cols]>(lstm_weights_0_txt);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../lstm_new.cpp:40:23: error: incompatible pointer types assigning to 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]') from 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]')
+            weights = reinterpret_cast<const data_t (*)[cols]>(lstm_weights_1_txt);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../lstm_new.cpp:43:23: error: incompatible pointer types assigning to 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]') from 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]')
+            weights = reinterpret_cast<const data_t (*)[cols]>(lstm_weights_2_txt);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../lstm_new.cpp:46:23: error: incompatible pointer types assigning to 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]') from 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]')
+            weights = reinterpret_cast<const data_t (*)[cols]>(lstm_weights_8_txt);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../lstm_new.cpp:49:23: error: incompatible pointer types assigning to 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]') from 'const data_t (*)[cols]' (aka 'const ap_fixed<16, 8> (*)[cols]')
+            weights = reinterpret_cast<const data_t (*)[cols]>(lstm_weights_9_txt);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../../../../lstm_new.cpp:69:21: error: call to 'tanh' is ambiguous
+        output[i] = tanh(intermediate[i]);
+                    ^~~~
+D:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/x86_64-w64-mingw32/include/math.h:183:18: note: candidate function
+  double __cdecl tanh(double _X);
+                 ^
+D:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:501:3: note: candidate function
+  tanh(float __x)
+  ^
+D:/xilinx/Vitis/2024.2/tps/mingw/10.0.0/win64.o/nt/include/c++/9.5.0/cmath:505:3: note: candidate function
+  tanh(long double __x)
+  ^
+1 warning and 6 errors generated.
+make: *** [obj/lstm_tb.o] Error 1
+ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 5
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 42.932 seconds; peak allocated memory: 162.832 MB.

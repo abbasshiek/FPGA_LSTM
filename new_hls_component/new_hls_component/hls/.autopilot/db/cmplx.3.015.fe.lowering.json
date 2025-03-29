@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 222,
+    "calls": "",
+    "file": "lstm_new.cpp",
+    "fileloc": 29,
+    "instructions": 2547,
+    "loads": {
+      "G": 3,
+      "L": 204
+    },
+    "name": "lstm_function",
+    "stores": {
+      "L": 206
+    },
+    "total_instructions": 2547
+  }
+}

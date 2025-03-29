@@ -1,0 +1,66 @@
+[
+  {
+    "directory": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component",
+    "arguments": [
+      "D:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=lstm_function",
+      "-c",
+      "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\activation_LUT.cpp"
+    ],
+    "file": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\activation_LUT.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component",
+    "arguments": [
+      "D:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=lstm_function",
+      "-c",
+      "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\block_circulant.cpp"
+    ],
+    "file": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\block_circulant.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component",
+    "arguments": [
+      "D:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=lstm_function",
+      "-c",
+      "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\lstm_new.cpp"
+    ],
+    "file": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\lstm_new.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component",
+    "arguments": [
+      "D:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=lstm_function",
+      "-c",
+      "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\updated_weights.cpp"
+    ],
+    "file": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\updated_weights.cpp"
+  },
+  {
+    "directory": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component",
+    "arguments": [
+      "D:\\xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\xilinx\\Vitis\\2024.2\\include",
+      "-c",
+      "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\lstm_tb.cpp"
+    ],
+    "file": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\FPGA_LSTM\\new_hls_component\\lstm_tb.cpp"
+  }
+]

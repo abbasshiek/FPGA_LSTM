@@ -1,0 +1,9 @@
+   Build using "D:/xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_lstm_function.cpp
+   Compiling activation_LUT.cpp_pre.cpp.tb.cpp
+   Compiling lstm_new.cpp_pre.cpp.tb.cpp
+   Compiling block_circulant.cpp_pre.cpp.tb.cpp
+   Compiling updated_weights.cpp_pre.cpp.tb.cpp
+   Compiling lstm_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_lstm_function_ir.ll
+   Generating cosim.tv.exe

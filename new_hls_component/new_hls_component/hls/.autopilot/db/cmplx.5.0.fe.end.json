@@ -1,0 +1,131 @@
+{
+    "1": {
+        "name": "lstm_function_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2",
+        "file": "lstm_new.cpp",
+        "fileloc": "76",
+        "instructions": "641",
+        "total_instructions": "641",
+        "calls": "",
+        "basicblocks": "205",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "206"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "lstm_function",
+        "file": "lstm_new.cpp",
+        "fileloc": "29",
+        "instructions": "662",
+        "total_instructions": "1624",
+        "calls": "6 5 3 1 4 2",
+        "basicblocks": "9",
+        "loads": {
+            "L": "202"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "lstm_function_Pipeline_VITIS_LOOP_104_6",
+        "file": "lstm_new.cpp",
+        "fileloc": "104",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "lstm_function_Pipeline_VITIS_LOOP_69_3",
+        "file": "lstm_new.cpp",
+        "fileloc": "69",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "lstm_function_Pipeline_VITIS_LOOP_93_5",
+        "file": "lstm_new.cpp",
+        "fileloc": "93",
+        "instructions": "234",
+        "total_instructions": "234",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "5": {
+        "name": "lstm_function_Pipeline_VITIS_LOOP_64_2",
+        "file": "lstm_new.cpp",
+        "fileloc": "64",
+        "instructions": "19",
+        "total_instructions": "19",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "lstm_function_Pipeline_VITIS_LOOP_59_1",
+        "file": "lstm_new.cpp",
+        "fileloc": "59",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

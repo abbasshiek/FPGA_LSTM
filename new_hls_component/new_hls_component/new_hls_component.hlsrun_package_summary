@@ -1,0 +1,164 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\new_hls_component\\new_hls_component.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "03/27/25 14:42:48",
+ "timestampMillis": "1743066768891",
+ "buildStep": {
+  "cmdId": "1f4bb32c-6cab-467f-bedb-a4621a1da291",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\new_hls_component\\logs\\new_hls_component.steps.log",
+  "commandLine": "D:/xilinx/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\hls_config.cfg --work_dir new_hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\hls_config.cfg",
+   "--work_dir",
+   "new_hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/27/25 14:42:48",
+ "timestampMillis": "1743066768892",
+ "status": {
+  "cmdId": "1f4bb32c-6cab-467f-bedb-a4621a1da291",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "03/27/25 14:43:01",
+ "timestampMillis": "1743066781139",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "lstm_function",
+     "file": "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\new_hls_component\\lstm_function.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\lstm_new.cpp",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\updated_weights.cpp",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\weights_dimensions.h",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\new_updated_weights.h",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\lstm_new.h",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\block_circulant.cpp",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\block_circulant.h",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\activation_LUT.h",
+     "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\activation_LUT.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "03/27/25 14:43:01",
+ "timestampMillis": "1743066781159",
+ "buildStep": {
+  "cmdId": "ff593f2c-30c4-4727-b13b-cd94bdf973ae",
+  "name": "",
+  "logFile": "C:/Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component\\new_hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA\\new_hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/27/25 14:43:01",
+ "timestampMillis": "1743066781161",
+ "status": {
+  "cmdId": "ff593f2c-30c4-4727-b13b-cd94bdf973ae",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/27/25 14:44:30",
+ "timestampMillis": "1743066870070",
+ "status": {
+  "cmdId": "ff593f2c-30c4-4727-b13b-cd94bdf973ae",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "03/27/25 14:44:32",
+ "timestampMillis": "1743066872696",
+ "status": {
+  "cmdId": "1f4bb32c-6cab-467f-bedb-a4621a1da291",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/27/25 14:44:32",
+ "timestampMillis": "1743066872801",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "03/27/25 14:44:32",
+ "timestampMillis": "1743066872802",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,59 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 1552, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,   398, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   269, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   173, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   120, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition, 3020, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 2912, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate , 2912, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 2912, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 2920, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification, 2920, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 2917, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 3047, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 2755, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering, 2547, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 1959, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="lstm_function" col1="lstm_new.cpp:29" col2="1552" col3="120" col4="2920" col5="2755" col6="1959">
+                    <row id="8" col0="get_lstm_weights_0_dimensions" col1="weights_dimensions.h:14" col2="5" col3="" col4="" col5="" col6="">
+                        <row id="3" col0="get_dimensions&lt;ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 62, 10&gt;" col1="weights_dimensions.h:8" col2="3" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="10" col0="get_lstm_weights_1_dimensions" col1="weights_dimensions.h:18" col2="5" col3="" col4="" col5="" col6="">
+                        <row id="6" col0="get_dimensions&lt;ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 10, 200&gt;" col1="weights_dimensions.h:8" col2="3" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="9" col0="get_lstm_weights_2_dimensions" col1="weights_dimensions.h:22" col2="5" col3="" col4="" col5="" col6="">
+                        <row id="4" col0="get_dimensions&lt;ap_fixed&lt;16, 8, AP_TRN, AP_WRAP, 0&gt;, 50, 200&gt;" col1="weights_dimensions.h:8" col2="3" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="5" col0="convert_to_circulant" col1="block_circulant.cpp:8" col2="29" col3="" col4="" col5="" col6=""/>
+                    <row id="11" col0="lookup_tanh" col1="lstm_new.cpp:22" col2="920" col3="" col4="" col5="" col6=""/>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

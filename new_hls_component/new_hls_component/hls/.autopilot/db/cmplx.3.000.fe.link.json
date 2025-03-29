@@ -1,0 +1,148 @@
+{
+  "0": {
+    "basicblocks": 49,
+    "calls": "6 8 7 3 9",
+    "file": "lstm_new.cpp",
+    "fileloc": 29,
+    "instructions": 173,
+    "loads": {
+      "G": 3,
+      "L": 10
+    },
+    "name": "lstm_function",
+    "stores": {
+      "L": 5,
+      "T": 1
+    },
+    "total_instructions": 1552
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "updated_weights.cpp",
+    "fileloc": 72,
+    "instructions": 2001,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 774001
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "5 1 11",
+    "file": "updated_weights.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 4,
+    "name": "",
+    "total_instructions": 4883947
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "updated_weights.cpp",
+    "fileloc": 3184,
+    "instructions": 10001,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 3870001
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights_dimensions.h",
+    "fileloc": 8,
+    "instructions": 3,
+    "name": "get_dimensions<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 62, 10>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights_dimensions.h",
+    "fileloc": 8,
+    "instructions": 3,
+    "name": "get_dimensions<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 50, 200>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "",
+    "file": "block_circulant.cpp",
+    "fileloc": 8,
+    "instructions": 29,
+    "loads": {
+      "L": 1
+    },
+    "name": "convert_to_circulant",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 29
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights_dimensions.h",
+    "fileloc": 8,
+    "instructions": 3,
+    "name": "get_dimensions<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 10, 200>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "updated_weights.cpp",
+    "fileloc": 6,
+    "instructions": 621,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 239941
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "12",
+    "file": "weights_dimensions.h",
+    "fileloc": 14,
+    "instructions": 2,
+    "name": "get_lstm_weights_0_dimensions",
+    "total_instructions": 5
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "weights_dimensions.h",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "get_lstm_weights_2_dimensions",
+    "total_instructions": 5
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "weights_dimensions.h",
+    "fileloc": 18,
+    "instructions": 2,
+    "name": "get_lstm_weights_1_dimensions",
+    "total_instructions": 5
+  },
+  "9": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "lstm_new.cpp",
+    "fileloc": 22,
+    "instructions": 28,
+    "loads": {
+      "L": 1
+    },
+    "name": "lookup_tanh",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 920
+  }
+}

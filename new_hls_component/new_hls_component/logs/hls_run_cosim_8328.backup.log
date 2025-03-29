@@ -1,0 +1,119 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component 
+INFO: [HLS 200-1611] Setting target device to 'xc7k160t-fbg676-2L'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=updated_weights.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/updated_weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights_dimensions.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/weights_dimensions.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=new_updated_weights.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_updated_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=block_circulant.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/block_circulant.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=block_circulant.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/block_circulant.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=activation_LUT.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/activation_LUT.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=activation_LUT.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/activation_LUT.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=lstm_tb.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=lstm_function' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7k160tfbg676-2L' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(5)
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling apatb_lstm_function.cpp
+   Compiling activation_LUT.cpp_pre.cpp.tb.cpp
+   Compiling lstm_new.cpp_pre.cpp.tb.cpp
+   Compiling block_circulant.cpp_pre.cpp.tb.cpp
+   Compiling updated_weights.cpp_pre.cpp.tb.cpp
+   Compiling lstm_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_lstm_function_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Input[0] = -3
+Input[1] = -2.90234
+Input[2] = -2.80078
+Input[3] = -2.70312
+Input[4] = -2.60156
+Input[5] = -2.5
+Input[6] = -2.40234
+Input[7] = -2.30078
+Input[8] = -2.20312
+Input[9] = -2.10156
+Input[10] = -2
+Input[11] = -1.90234
+Input[12] = -1.80078
+Input[13] = -1.70312
+Input[14] = -1.60156
+Input[15] = -1.5
+Input[16] = -1.40234
+Input[17] = -1.30078
+Input[18] = -1.20312
+Input[19] = -1.10156
+Input[20] = -1
+Input[21] = -0.902344
+Input[22] = -0.800781
+Input[23] = -0.703125
+Input[24] = -0.601562
+Input[25] = -0.5
+Input[26] = -0.402344
+Input[27] = -0.300781
+Input[28] = -0.203125
+Input[29] = -0.101562
+Input[30] = 0
+Input[31] = 0.0976562
+Input[32] = 0.199219
+Input[33] = 0.296875
+Input[34] = 0.398438
+Input[35] = 0.5
+Input[36] = 0.597656
+Input[37] = 0.699219
+Input[38] = 0.796875
+Input[39] = 0.898438
+Input[40] = 1
+Input[41] = 1.09766
+Input[42] = 1.19922
+Input[43] = 1.29688
+Input[44] = 1.39844
+Input[45] = 1.5
+Input[46] = 1.59766
+Input[47] = 1.69922
+Input[48] = 1.79688
+Input[49] = 1.89844
+Input[50] = 2
+Input[51] = 2.09766
+Input[52] = 2.19922
+Input[53] = 2.29688
+Input[54] = 2.39844
+Input[55] = 2.5
+Input[56] = 2.59766
+Input[57] = 2.69922
+Input[58] = 2.79688
+Input[59] = 2.89844
+Input[60] = 3
+Input[61] = 3.09766
+Input[62] = 3.19922
+Input[63] = 3.29688
+ERROR: A depth specification is required for interface port 'input_r' for cosimulation.
+ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '1'.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 12 seconds. Total CPU system time: 3 seconds. Total elapsed time: 176.941 seconds; peak allocated memory: 233.707 MB.

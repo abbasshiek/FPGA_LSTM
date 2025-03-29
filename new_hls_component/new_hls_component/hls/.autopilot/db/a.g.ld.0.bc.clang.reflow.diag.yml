@@ -1,0 +1,922 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db\updated_weights.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_updated_weights.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init
+    DebugLoc:        { File: updated_weights.cpp, Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_updated_weights.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db\updated_weights.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db\updated_weights.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_updated_weights.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: updated_weights.cpp, Line: 72, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_updated_weights.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db\updated_weights.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db\updated_weights.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_updated_weights.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.3
+    DebugLoc:        { File: updated_weights.cpp, Line: 3184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_updated_weights.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db\updated_weights.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 15, Column: 5 }
+Function:        _Z29get_lstm_weights_0_dimensionsRiS_
+Args:            
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 62, 10>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [62][10], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'get_lstm_weights_0_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 19, Column: 5 }
+Function:        _Z29get_lstm_weights_1_dimensionsRiS_
+Args:            
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 10, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [10][200], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'get_lstm_weights_1_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 23, Column: 5 }
+Function:        _Z29get_lstm_weights_2_dimensionsRiS_
+Args:            
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 50, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [50][200], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'get_lstm_weights_2_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 41, Column: 17 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'get_lstm_weights_0_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 42, Column: 17 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'get_lstm_weights_1_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 43, Column: 17 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'get_lstm_weights_2_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 76, Column: 5 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'convert_to_circulant(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [256], int)'
+    DebugLoc:        { File: block_circulant.cpp, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 106, Column: 14 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'lookup_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 15, Column: 5 }
+Function:        _Z29get_lstm_weights_0_dimensionsRiS_
+Args:            
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 62, 10>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [62][10], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'get_lstm_weights_0_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 19, Column: 5 }
+Function:        _Z29get_lstm_weights_1_dimensionsRiS_
+Args:            
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 10, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [10][200], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'get_lstm_weights_1_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 23, Column: 5 }
+Function:        _Z29get_lstm_weights_2_dimensionsRiS_
+Args:            
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 50, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [50][200], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'get_lstm_weights_2_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 41, Column: 17 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'get_lstm_weights_0_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 42, Column: 17 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'get_lstm_weights_1_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 43, Column: 17 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'get_lstm_weights_2_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 76, Column: 5 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'convert_to_circulant(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [256], int)'
+    DebugLoc:        { File: block_circulant.cpp, Line: 8, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: lstm_new.cpp, Line: 106, Column: 14 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - Callee:          'lookup_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_lstm_function_ir
+Args:            
+  - Callee:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_lstm_function_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+Function:        _Z29get_lstm_weights_0_dimensionsRiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 62, 10>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [62][10], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'get_lstm_weights_0_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+Function:        _Z29get_lstm_weights_1_dimensionsRiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 10, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [10][200], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'get_lstm_weights_1_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+Function:        _Z29get_lstm_weights_2_dimensionsRiS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void get_dimensions<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 50, 200>(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const (&) [50][200], int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 8, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'get_lstm_weights_2_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_lstm_weights_0_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 14, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_lstm_weights_1_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'get_lstm_weights_2_dimensions(int&, int&)'
+    DebugLoc:        { File: ./weights_dimensions.h, Line: 22, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'convert_to_circulant(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [256], int)'
+    DebugLoc:        { File: block_circulant.cpp, Line: 8, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'lookup_tanh(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 22, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          circulant_matrix
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        inputseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:93:26'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: lstm_new.cpp, Line: 95, Column: 44 }
+  - OrigDirection:   read
+  - OrigID:          for.body44.load.411
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: lstm_new.cpp, Line: 104, Column: 23 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        outputseq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_104_6
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:104:23'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: lstm_new.cpp, Line: 106, Column: 12 }
+  - OrigDirection:   write
+  - OrigID:          for.inc70.store.11
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzePattern
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          Could not analyze pattern
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          inputseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_90_4
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:90:22'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: lstm_new.cpp, Line: 104, Column: 23 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: lstm_new.cpp, Line: 104, Column: 23 }
+  - OrigDirection:   write
+  - OrigID:          outputseq
+  - ArrayName:       output
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_104_6
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:104:23'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+  - OrigDirection:   read
+  - OrigID:          inputseq
+  - ArrayName:       input
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:93:26'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_69_3
+  - String:          '> at '
+  - LoopLoc:         'lstm_new.cpp:69:30'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_64_2
+  - String:          '> at '
+  - LoopLoc:         'lstm_new.cpp:64:30'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_59_1
+  - String:          '> at '
+  - LoopLoc:         'lstm_new.cpp:59:30'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: updated_weights.cpp, Line: 6, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           lstm_weights_0_txt
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: updated_weights.cpp, Line: 72, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           lstm_weights_1_txt
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: updated_weights.cpp, Line: 3184, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           lstm_weights_2_txt
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: updated_weights.cpp, Line: 6, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=lstm_weights_0_txt'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  lstm_function
+  - String:          ' '
+  - varLoc:          'updated_weights.cpp:6:0'
+  - String:          ' '
+  - VarName:         lstm_weights_0_txt
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: updated_weights.cpp, Line: 6, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            lstm_weights_0_txt
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: updated_weights.cpp, Line: 72, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=lstm_weights_1_txt'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  lstm_function
+  - String:          ' '
+  - varLoc:          'updated_weights.cpp:72:0'
+  - String:          ' '
+  - VarName:         lstm_weights_1_txt
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: updated_weights.cpp, Line: 72, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            lstm_weights_1_txt
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: updated_weights.cpp, Line: 3184, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=lstm_weights_2_txt'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  lstm_function
+  - String:          ' '
+  - varLoc:          'updated_weights.cpp:3184:0'
+  - String:          ' '
+  - VarName:         lstm_weights_2_txt
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: updated_weights.cpp, Line: 3184, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            lstm_weights_2_txt
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: updated_weights.cpp, Line: 3184, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          lstm_weights_2_txt
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: updated_weights.cpp, Line: 72, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          lstm_weights_1_txt
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: updated_weights.cpp, Line: 6, Column: 0 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          lstm_weights_0_txt
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:93:26'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          '''('
+  - LoopLoc:         'lstm_new.cpp:93:26'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: lstm_new.cpp, Line: 104, Column: 23 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_104_6
+  - String:          ' '
+  - LoopLoc:         'lstm_new.cpp:104:23'
+  - String:          ' '
+  - Function:        'lstm_function(ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const*, ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)'
+    DebugLoc:        { File: lstm_new.cpp, Line: 33, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: lstm_new.cpp, Line: 104, Column: 23 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_104_6
+  - String:          '''('
+  - LoopLoc:         'lstm_new.cpp:104:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Missed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFailFullyUnroll
+DebugLoc:        { File: lstm_new.cpp, Line: 93, Column: 26 }
+Function:        _Z13lstm_functionPK8ap_fixedILi16ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS2_i
+Args:            
+  - String:          'Cannot unroll loop '''
+  - LoopName:        VITIS_LOOP_93_5
+  - String:          ''' ('
+  - LoopLoc:         'lstm_new.cpp:93:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          lstm_function
+  - String:          ''' as it has a variable trip count'
+...

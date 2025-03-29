@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../lstm_tb.cpp in debug mode
+   Compiling ../../../../lstm_new.cpp in debug mode
+   Generating csim.exe
+LSTM Output: 
+-1 0.613281 1 -1 -1 -1 -1 -1 1 1 1 1 -1 1 -1 1 -1 0.996094 -1 -1 1 -1 1 1 -1 -1 -1 -1 1 1 1 1 -0.996094 -1 1 -1 1 1 1 1 -1 0.996094 -1 -1 1 1 -1 1 -1 1 1 -1 -1 1 -1 -1 -1 -1 1 1 -1 -1 0.00390625 0 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

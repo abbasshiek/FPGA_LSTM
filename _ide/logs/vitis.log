@@ -1,0 +1,67 @@
+12:05:29 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+12:26:52 INFO  : created .gitignore file for the project C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component
+16:16:52 ERROR : Invalid project location 'null'.
+16:17:50 ERROR : Invalid project location 'null'.
+16:23:28 ERROR : Invalid project location 'null'.
+16:48:52 ERROR : Invalid project location 'null'.
+17:57:05 ERROR : Invalid project location 'null'.
+18:57:28 ERROR : Invalid project location 'null'.
+19:05:14 ERROR : Invalid project location 'null'.
+19:14:29 ERROR : Invalid project location 'null'.
+19:17:42 ERROR : Invalid project location 'null'.
+19:33:44 ERROR : Invalid project location 'null'.
+20:10:56 ERROR : Invalid project location 'null'.
+20:22:45 ERROR : Invalid project location 'null'.
+20:24:53 ERROR : Invalid project location 'null'.
+20:59:55 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+20:59:55 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+21:01:07 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+21:01:07 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+21:12:59 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+21:12:59 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+21:24:40 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+21:24:40 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+22:25:06 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+23:25:17 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+00:25:34 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+01:25:53 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+02:26:05 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+03:26:12 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+04:26:37 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+05:26:38 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+09:25:34 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+09:25:36 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:01:56 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:01:57 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:01:57 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:15:23 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:15:23 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:15:24 ERROR : Error in handling the notification Illegal char <:> at index 58: C:\Users\Abbas_Sheik\Downloads\updated_weights.cppb.file=C:\Users\Abbas_Sheik\Downloads\updated_weights.cpp
+10:41:03 ERROR : Failed to delete the hls-debug.cfg file java.nio.file.NoSuchFileException: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls-debug.cfg
+10:41:06 ERROR : Failed to delete the hls-debug.cfg file java.nio.file.NoSuchFileException: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls-debug.cfg
+10:41:18 ERROR : Invalid project location 'null'.
+10:41:18 ERROR : Invalid project location 'null'.
+10:41:18 ERROR : Invalid project location 'null'.
+10:41:18 ERROR : Invalid project location 'null'.
+10:48:37 ERROR : Invalid project location 'null'.
+12:45:37 ERROR : Invalid project location 'null'.
+16:37:09 INFO  : Exporting selected projects to: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\archive.zip
+16:37:10 INFO  : Project exported successfully to: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\archive.zip
+21:34:02 INFO  : created .gitignore file for the project C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+21:34:03 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+09:24:00 INFO  : created .gitignore file for the project C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+09:24:00 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+14:06:36 INFO  : created .gitignore file for the project C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+14:06:37 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+16:24:41 INFO  : Exporting selected projects to: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\archive.zip
+16:24:42 INFO  : Project exported successfully to: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\archive.zip
+17:26:18 INFO  : connection terminated
+17:26:18 INFO  : connection terminated
+17:26:18 INFO  : scheduling shutdown timer for 2 seconds ...
+17:26:21 INFO  : Terminating Vitis C++ Server
+17:26:22 INFO  : Vitis C++ Server terminated
+08:35:27 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+11:58:58 INFO  : created .gitignore file for the project C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+11:59:01 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+19:04:38 INFO  : created .gitignore file for the project C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA
+19:04:46 INFO  : updated workspace path: C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA

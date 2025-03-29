@@ -1,0 +1,426 @@
+
+
+================================================================
+== Synthesis Summary Report of 'lstm_function'
+================================================================
++ General Information: 
+    * Date:           Fri Mar 28 16:05:19 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        new_hls_component
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: kintex7
+    * Target device:  xc7k160t-fbg676-2L
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+-----------+-----------+-----+
+    |                          Modules                         | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |           |         |           |           |     |
+    |                          & Loops                         | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|   BRAM    |   DSP   |     FF    |    LUT    | URAM|
+    +----------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+-----------+-----------+-----+
+    |+ lstm_function                                           |     -|  0.00|    53809|  5.381e+05|         -|    53810|      -|        no|  207 (31%)|  1 (~0%)|  5606 (2%)|  9046 (8%)|    -|
+    | + lstm_function_Pipeline_VITIS_LOOP_69_3                 |     -|  4.47|      202|  2.020e+03|         -|      202|      -|        no|    1 (~0%)|        -|   19 (~0%)|   68 (~0%)|    -|
+    |  o VITIS_LOOP_69_3                                       |     -|  9.00|      200|  2.000e+03|         2|        1|    200|       yes|          -|        -|          -|          -|    -|
+    | + lstm_function_Pipeline_VITIS_LOOP_64_2                 |     -|  4.47|      202|  2.020e+03|         -|      202|      -|        no|    1 (~0%)|        -|   19 (~0%)|   68 (~0%)|    -|
+    |  o VITIS_LOOP_64_2                                       |     -|  9.00|      200|  2.000e+03|         2|        1|    200|       yes|          -|        -|          -|          -|    -|
+    | + lstm_function_Pipeline_VITIS_LOOP_59_1                 |     -|  5.59|       12|    120.000|         -|       12|      -|        no|          -|        -|   27 (~0%)|   67 (~0%)|    -|
+    |  o VITIS_LOOP_59_1                                       |     -|  9.00|       10|    100.000|         2|        1|     10|       yes|          -|        -|          -|          -|    -|
+    | + lstm_function_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2  |     -|  2.93|    40014|  4.001e+05|         -|    40014|      -|        no|          -|        -|  641 (~0%)|  423 (~0%)|    -|
+    |  o VITIS_LOOP_9_1_VITIS_LOOP_10_2                        |     -|  9.00|    40012|  4.001e+05|        14|        1|  40000|       yes|          -|        -|          -|          -|    -|
+    | + lstm_function_Pipeline_VITIS_LOOP_104_6                |     -|  0.00|       65|    650.000|         -|       65|      -|        no|          -|        -|   23 (~0%)|  147 (~0%)|    -|
+    |  o VITIS_LOOP_104_6                                      |     -|  9.00|       63|    630.000|         3|        1|     62|       yes|          -|        -|          -|          -|    -|
+    | o VITIS_LOOP_90_4                                        |     -|  9.00|    13516|  1.352e+05|       218|        -|     62|        no|          -|        -|          -|          -|    -|
+    |  + lstm_function_Pipeline_VITIS_LOOP_93_5                |     -|  0.00|      206|  2.060e+03|         -|      206|      -|        no|          -|  1 (~0%)|  149 (~0%)|  1189 (1%)|    -|
+    |   o VITIS_LOOP_93_5                                      |     -|  9.00|      204|  2.040e+03|         6|        1|    200|       yes|          -|        -|          -|          -|    -|
+    +----------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface  | Read/Write | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|            |            | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_gmem | READ_WRITE | 16 -> 16   | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=3            |
++------------+------------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++-----------------+------------+---------------+--------+----------+
+| Interface       | Data Width | Address Width | Offset | Register |
++-----------------+------------+---------------+--------+----------+
+| s_axi_control   | 32         | 5             | 16     | 0        |
+| s_axi_control_r | 32         | 6             | 16     | 0        |
++-----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++-----------------+------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface       | Register         | Offset | Width | Access | Description                      | Bit Fields                                                           |
++-----------------+------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control   | CTRL             | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control   | GIER             | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control   | IP_IER           | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control   | IP_ISR           | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control   | weight_matrix_id | 0x10   | 32    | W      | Data signal of weight_matrix_id  |                                                                      |
+| s_axi_control_r | input_r_1        | 0x10   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control_r | input_r_2        | 0x14   | 32    | W      | Data signal of input_r           |                                                                      |
+| s_axi_control_r | output_r_1       | 0x1c   | 32    | W      | Data signal of output_r          |                                                                      |
+| s_axi_control_r | output_r_2       | 0x20   | 32    | W      | Data signal of output_r          |                                                                      |
++-----------------+------------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------------+-----------+---------------------------------------------+
+| Argument         | Direction | Datatype                                    |
++------------------+-----------+---------------------------------------------+
+| input            | inout     | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0> const * |
+| output           | inout     | ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>*        |
+| weight_matrix_id | in        | int                                         |
++------------------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++------------------+-----------------+-----------+----------+--------------------------------------------+
+| Argument         | HW Interface    | HW Type   | HW Usage | HW Info                                    |
++------------------+-----------------+-----------+----------+--------------------------------------------+
+| input            | m_axi_gmem      | interface |          | channel=0                                  |
+| input            | s_axi_control_r | register  | offset   | name=input_r_1 offset=0x10 range=32        |
+| input            | s_axi_control_r | register  | offset   | name=input_r_2 offset=0x14 range=32        |
+| output           | m_axi_gmem      | interface |          | channel=0                                  |
+| output           | s_axi_control_r | register  | offset   | name=output_r_1 offset=0x1c range=32       |
+| output           | s_axi_control_r | register  | offset   | name=output_r_2 offset=0x20 range=32       |
+| weight_matrix_id | s_axi_control   | register  |          | name=weight_matrix_id offset=0x10 range=32 |
++------------------+-----------------+-----------+----------+--------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+----------+-------+------------------+---------------------+
+| HW Interface | Direction | Length   | Width | Loop             | Loop Location       |
++--------------+-----------+----------+-------+------------------+---------------------+
+| m_axi_gmem   | read      | variable | 16    | VITIS_LOOP_93_5  | lstm_new.cpp:93:26  |
+| m_axi_gmem   | write     | variable | 16    | VITIS_LOOP_104_6 | lstm_new.cpp:104:23 |
++--------------+-----------+----------+-------+------------------+---------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+---------------------+-----------+--------------+----------+------------------+---------------------+------------+-------------------------------------------------------------------------------------------------------+
+| HW Interface | Variable | Access Location     | Direction | Burst Status | Length   | Loop             | Loop Location       | Resolution | Problem                                                                                               |
++--------------+----------+---------------------+-----------+--------------+----------+------------------+---------------------+------------+-------------------------------------------------------------------------------------------------------+
+| m_axi_gmem   | input    | lstm_new.cpp:95:44  | read      | Widen Fail   |          | VITIS_LOOP_93_5  | lstm_new.cpp:93:26  | 214-353    | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | input    | lstm_new.cpp:95:44  | read      | Fail         |          | VITIS_LOOP_90_4  | lstm_new.cpp:90:22  | 214-229    | Could not analyze pattern                                                                             |
+| m_axi_gmem   | input    | lstm_new.cpp:95:44  | read      | Inferred     | variable | VITIS_LOOP_93_5  | lstm_new.cpp:93:26  |            |                                                                                                       |
+| m_axi_gmem   | output   | lstm_new.cpp:106:12 | write     | Widen Fail   |          | VITIS_LOOP_104_6 | lstm_new.cpp:104:23 | 214-353    | Could not widen since type i16 size is greater than or equal to the max_widen_bitwidth threshold of 0 |
+| m_axi_gmem   | output   | lstm_new.cpp:106:12 | write     | Inferred     | variable | VITIS_LOOP_104_6 | lstm_new.cpp:104:23 |            |                                                                                                       |
++--------------+----------+---------------------+-----------+--------------+----------+------------------+---------------------+------------+-------------------------------------------------------------------------------------------------------+
+
+    * Resolution URL: docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------+-----+--------+---------------+-----------+--------------------------+---------+
+| Name                                                     | DSP | Pragma | Variable      | Op        | Impl                     | Latency |
++----------------------------------------------------------+-----+--------+---------------+-----------+--------------------------+---------+
+| + lstm_function                                          | 1   |        |               |           |                          |         |
+|   mul_8ns_8ns_16_1_1_U425                                |     |        | mul_ln8       | mul       | auto                     | 0       |
+|   icmp_ln90_fu_4112_p2                                   |     |        | icmp_ln90     | seteq     | auto                     | 0       |
+|   add_ln90_fu_4117_p2                                    |     |        | add_ln90      | add       | fabric                   | 0       |
+|  + lstm_function_Pipeline_VITIS_LOOP_69_3                | 0   |        |               |           |                          |         |
+|    icmp_ln69_fu_68_p2                                    |     |        | icmp_ln69     | seteq     | auto                     | 0       |
+|    add_ln69_fu_74_p2                                     |     |        | add_ln69      | add       | fabric                   | 0       |
+|  + lstm_function_Pipeline_VITIS_LOOP_64_2                | 0   |        |               |           |                          |         |
+|    icmp_ln64_fu_68_p2                                    |     |        | icmp_ln64     | seteq     | auto                     | 0       |
+|    add_ln64_fu_74_p2                                     |     |        | add_ln64      | add       | fabric                   | 0       |
+|  + lstm_function_Pipeline_VITIS_LOOP_59_1                | 0   |        |               |           |                          |         |
+|    icmp_ln59_fu_69_p2                                    |     |        | icmp_ln59     | seteq     | auto                     | 0       |
+|    add_ln59_fu_75_p2                                     |     |        | add_ln59      | add       | fabric                   | 0       |
+|  + lstm_function_Pipeline_VITIS_LOOP_9_1_VITIS_LOOP_10_2 | 0   |        |               |           |                          |         |
+|    icmp_ln9_fu_3711_p2                                   |     |        | icmp_ln9      | seteq     | auto                     | 0       |
+|    add_ln9_fu_3717_p2                                    |     |        | add_ln9       | add       | fabric                   | 0       |
+|    icmp_ln10_fu_3729_p2                                  |     |        | icmp_ln10     | seteq     | auto                     | 0       |
+|    select_ln9_fu_3735_p3                                 |     |        | select_ln9    | select    | auto_sel                 | 0       |
+|    add_ln9_1_fu_3743_p2                                  |     |        | add_ln9_1     | add       | fabric                   | 0       |
+|    select_ln9_1_fu_3749_p3                               |     |        | select_ln9_1  | select    | auto_sel                 | 0       |
+|    grp_fu_3771_p0                                        |     |        | add_ln12      | add       | fabric                   | 0       |
+|    urem_9ns_8ns_9_13_1_U7                                |     |        | urem_ln12     | urem      | auto                     | 12      |
+|    add_ln10_fu_3777_p2                                   |     |        | add_ln10      | add       | fabric                   | 0       |
+|  + lstm_function_Pipeline_VITIS_LOOP_93_5                | 1   |        |               |           |                          |         |
+|    icmp_ln93_fu_2119_p2                                  |     |        | icmp_ln93     | seteq     | auto                     | 0       |
+|    add_ln93_fu_2125_p2                                   |     |        | add_ln93      | add       | fabric                   | 0       |
+|    sparsemux_401_8_16_1_1_U213                           |     |        | tmp           | sparsemux | compactencoding_dontcare | 0       |
+|    mac_muladd_16s_16s_24ns_24_4_1_U214                   | 1   |        | mul_ln95      | mul       | dsp_slice                | 3       |
+|    mac_muladd_16s_16s_24ns_24_4_1_U214                   | 1   |        | add_ln95      | add       | dsp_slice                | 3       |
+|  + lstm_function_Pipeline_VITIS_LOOP_104_6               | 0   |        |               |           |                          |         |
+|    icmp_ln104_fu_115_p2                                  |     |        | icmp_ln104    | seteq     | auto                     | 0       |
+|    add_ln104_fu_121_p2                                   |     |        | add_ln104     | add       | fabric                   | 0       |
+|    icmp_ln23_fu_141_p2                                   |     |        | icmp_ln23     | setgt     | auto                     | 0       |
+|    icmp_ln24_fu_147_p2                                   |     |        | icmp_ln24     | setlt     | auto                     | 0       |
+|    select_ln23_1_fu_153_p3                               |     |        | select_ln23_1 | select    | auto_sel                 | 0       |
+|    or_ln23_fu_161_p2                                     |     |        | or_ln23       | or        | auto                     | 0       |
+|    select_ln23_fu_167_p3                                 |     |        | select_ln23   | select    | auto_sel                 | 0       |
++----------------------------------------------------------+-----+--------+---------------+-----------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------------------------------+--------------+-----------+------+------+--------+----------------------+------+---------+------------------+
+| Name                                      | Usage        | Type      | BRAM | URAM | Pragma | Variable             | Impl | Latency | Bitwidth, Depth, |
+|                                           |              |           |      |      |        |                      |      |         | Banks            |
++-------------------------------------------+--------------+-----------+------+------+--------+----------------------+------+---------+------------------+
+| + lstm_function                           |              |           | 207  | 0    |        |                      |      |         |                  |
+|   control_s_axi_U                         | interface    | s_axilite |      |      |        |                      |      |         |                  |
+|   control_r_s_axi_U                       | interface    | s_axilite |      |      |        |                      |      |         |                  |
+|   gmem_m_axi_U                            | interface    | m_axi     | 3    |      |        |                      |      |         |                  |
+|   circulant_matrix_U                      | ram_1p array |           | 1    |      |        | circulant_matrix     | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_1_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_1   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_2_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_2   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_3_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_3   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_4_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_4   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_5_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_5   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_6_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_6   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_7_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_7   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_8_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_8   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_9_U                    | ram_1p array |           | 1    |      |        | circulant_matrix_9   | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_10_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_10  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_11_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_11  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_12_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_12  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_13_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_13  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_14_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_14  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_15_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_15  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_16_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_16  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_17_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_17  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_18_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_18  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_19_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_19  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_20_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_20  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_21_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_21  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_22_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_22  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_23_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_23  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_24_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_24  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_25_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_25  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_26_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_26  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_27_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_27  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_28_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_28  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_29_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_29  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_30_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_30  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_31_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_31  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_32_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_32  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_33_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_33  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_34_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_34  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_35_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_35  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_36_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_36  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_37_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_37  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_38_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_38  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_39_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_39  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_40_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_40  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_41_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_41  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_42_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_42  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_43_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_43  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_44_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_44  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_45_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_45  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_46_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_46  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_47_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_47  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_48_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_48  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_49_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_49  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_50_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_50  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_51_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_51  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_52_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_52  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_53_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_53  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_54_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_54  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_55_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_55  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_56_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_56  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_57_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_57  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_58_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_58  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_59_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_59  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_60_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_60  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_61_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_61  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_62_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_62  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_63_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_63  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_64_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_64  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_65_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_65  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_66_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_66  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_67_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_67  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_68_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_68  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_69_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_69  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_70_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_70  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_71_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_71  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_72_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_72  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_73_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_73  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_74_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_74  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_75_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_75  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_76_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_76  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_77_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_77  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_78_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_78  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_79_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_79  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_80_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_80  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_81_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_81  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_82_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_82  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_83_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_83  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_84_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_84  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_85_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_85  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_86_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_86  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_87_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_87  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_88_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_88  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_89_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_89  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_90_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_90  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_91_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_91  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_92_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_92  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_93_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_93  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_94_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_94  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_95_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_95  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_96_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_96  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_97_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_97  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_98_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_98  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_99_U                   | ram_1p array |           | 1    |      |        | circulant_matrix_99  | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_100_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_100 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_101_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_101 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_102_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_102 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_103_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_103 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_104_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_104 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_105_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_105 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_106_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_106 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_107_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_107 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_108_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_108 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_109_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_109 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_110_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_110 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_111_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_111 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_112_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_112 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_113_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_113 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_114_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_114 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_115_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_115 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_116_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_116 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_117_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_117 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_118_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_118 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_119_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_119 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_120_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_120 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_121_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_121 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_122_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_122 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_123_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_123 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_124_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_124 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_125_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_125 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_126_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_126 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_127_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_127 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_128_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_128 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_129_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_129 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_130_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_130 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_131_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_131 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_132_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_132 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_133_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_133 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_134_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_134 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_135_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_135 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_136_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_136 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_137_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_137 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_138_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_138 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_139_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_139 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_140_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_140 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_141_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_141 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_142_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_142 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_143_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_143 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_144_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_144 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_145_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_145 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_146_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_146 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_147_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_147 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_148_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_148 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_149_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_149 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_150_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_150 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_151_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_151 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_152_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_152 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_153_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_153 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_154_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_154 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_155_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_155 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_156_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_156 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_157_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_157 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_158_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_158 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_159_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_159 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_160_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_160 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_161_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_161 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_162_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_162 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_163_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_163 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_164_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_164 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_165_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_165 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_166_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_166 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_167_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_167 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_168_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_168 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_169_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_169 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_170_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_170 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_171_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_171 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_172_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_172 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_173_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_173 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_174_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_174 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_175_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_175 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_176_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_176 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_177_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_177 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_178_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_178 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_179_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_179 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_180_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_180 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_181_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_181 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_182_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_182 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_183_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_183 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_184_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_184 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_185_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_185 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_186_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_186 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_187_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_187 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_188_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_188 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_189_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_189 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_190_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_190 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_191_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_191 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_192_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_192 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_193_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_193 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_194_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_194 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_195_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_195 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_196_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_196 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_197_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_197 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_198_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_198 | auto | 1       | 16, 256, 1       |
+|   circulant_matrix_199_U                  | ram_1p array |           | 1    |      |        | circulant_matrix_199 | auto | 1       | 16, 256, 1       |
+|   matrix_row_U                            | ram_1p array |           | 1    |      |        | matrix_row           | auto | 1       | 16, 256, 1       |
+|   intermediate_U                          | ram_1p array |           | 1    |      |        | intermediate         | auto | 1       | 16, 256, 1       |
+|  + lstm_function_Pipeline_VITIS_LOOP_69_3 |              |           | 1    | 0    |        |                      |      |         |                  |
+|    lstm_weights_2_txt_0_U                 | rom_1p       |           | 1    |      |        | lstm_weights_2_txt_0 | auto | 1       | 15, 200, 1       |
+|  + lstm_function_Pipeline_VITIS_LOOP_64_2 |              |           | 1    | 0    |        |                      |      |         |                  |
+|    lstm_weights_1_txt_0_U                 | rom_1p       |           | 1    |      |        | lstm_weights_1_txt_0 | auto | 1       | 15, 200, 1       |
+|  + lstm_function_Pipeline_VITIS_LOOP_59_1 |              |           | 0    | 0    |        |                      |      |         |                  |
+|    lstm_weights_0_txt_0_U                 | rom_1p       |           |      |      |        | lstm_weights_0_txt_0 | auto | 1       | 16, 10, 1        |
++-------------------------------------------+--------------+-----------+------+------+--------+----------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------------------------+----------------------------------------------------+
+| Type            | Options                                             | Location                                           |
++-----------------+-----------------------------------------------------+----------------------------------------------------+
+| pipeline        |                                                     | block_circulant.cpp:11 in convert_to_circulant     |
+| pipeline        |                                                     | block_circulant.cpp:22 in circulant_mvm            |
+| pipeline        |                                                     | block_circulant.cpp:31 in circulant_mvm            |
+| unroll          | factor=4                                            | block_circulant.cpp:40 in circulant_mvm            |
+| pipeline        |                                                     | block_circulant.cpp:48 in circulant_mvm            |
+| interface       | mode=m_axi port=input offset=slave bundle=gmem      | lstm_new.cpp:34 in lstm_function, input            |
+| interface       | mode=m_axi port=output offset=slave bundle=gmem     | lstm_new.cpp:35 in lstm_function, output           |
+| interface       | mode=s_axilite port=weight_matrix_id bundle=control | lstm_new.cpp:36 in lstm_function, weight_matrix_id |
+| interface       | mode=s_axilite port=return bundle=control           | lstm_new.cpp:37 in lstm_function, return           |
+| array_partition | variable=circulant_matrix dim=2 complete            | lstm_new.cpp:54 in lstm_function, circulant_matrix |
+| pipeline        |                                                     | lstm_new.cpp:91 in lstm_function                   |
+| pipeline        |                                                     | lstm_new.cpp:94 in lstm_function                   |
+| pipeline        |                                                     | lstm_new.cpp:105 in lstm_function                  |
++-----------------+-----------------------------------------------------+----------------------------------------------------+
+
+

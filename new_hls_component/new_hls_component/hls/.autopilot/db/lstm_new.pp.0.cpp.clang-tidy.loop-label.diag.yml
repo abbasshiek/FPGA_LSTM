@@ -1,0 +1,94 @@
+---
+MainSourceFile:  'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component/hls/.autopilot/db/lstm_new.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          379185
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          379651
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          380118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'D:\xilinx\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          663100
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_59_1:  '
+    FileOffset:      59
+    FilePath:        lstm_new.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          1069765
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_59_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_2:  '
+    FileOffset:      64
+    FilePath:        lstm_new.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          1069917
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_3:  '
+    FileOffset:      69
+    FilePath:        lstm_new.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          1070069
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_90_4:  '
+    FileOffset:      90
+    FilePath:        lstm_new.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          1070317
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_90_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_5:  '
+    FileOffset:      93
+    FilePath:        lstm_new.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          1070401
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_6:  '
+    FileOffset:      104
+    FilePath:        lstm_new.cpp
+    Replacements:    
+      - FilePath:        'C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\lstm_new.pp.0.cpp'
+        Offset:          1070536
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_6: '
+...

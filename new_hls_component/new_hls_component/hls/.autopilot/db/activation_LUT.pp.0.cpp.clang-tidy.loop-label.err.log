@@ -1,0 +1,4 @@
+1 warning and 26 errors generated.
+Error while processing C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\new_hls_component\hls\.autopilot\db\activation_LUT.pp.0.cpp.
+clang-tidy applied 131 of 131 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

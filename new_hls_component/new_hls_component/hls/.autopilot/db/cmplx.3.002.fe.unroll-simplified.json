@@ -1,0 +1,110 @@
+{
+  "0": {
+    "basicblocks": 29,
+    "calls": "1 5 2 3 4",
+    "file": "lstm_new.cpp",
+    "fileloc": 29,
+    "instructions": 133,
+    "loads": {
+      "G": 3,
+      "L": 8,
+      "T": 1
+    },
+    "name": "lstm_function",
+    "stores": {
+      "L": 5,
+      "T": 1
+    },
+    "total_instructions": 269
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "weights_dimensions.h",
+    "fileloc": 14,
+    "instructions": 2,
+    "name": "get_lstm_weights_0_dimensions",
+    "total_instructions": 5
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "weights_dimensions.h",
+    "fileloc": 22,
+    "instructions": 2,
+    "name": "get_lstm_weights_2_dimensions",
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "block_circulant.cpp",
+    "fileloc": 8,
+    "instructions": 22,
+    "loads": {
+      "L": 1
+    },
+    "name": "convert_to_circulant",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 22
+  },
+  "4": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "lstm_new.cpp",
+    "fileloc": 22,
+    "instructions": 11,
+    "name": "lookup_tanh",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 99
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "weights_dimensions.h",
+    "fileloc": 18,
+    "instructions": 2,
+    "name": "get_lstm_weights_1_dimensions",
+    "total_instructions": 5
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights_dimensions.h",
+    "fileloc": 8,
+    "instructions": 3,
+    "name": "get_dimensions<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 10, 200>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights_dimensions.h",
+    "fileloc": 8,
+    "instructions": 3,
+    "name": "get_dimensions<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 50, 200>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "weights_dimensions.h",
+    "fileloc": 8,
+    "instructions": 3,
+    "name": "get_dimensions<ap_fixed<16, 8, AP_TRN, AP_WRAP, 0>, 62, 10>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "workspaceRoot": "C:\\Users\\Abbas_Sheik\\Desktop\\LSTM_FPGA",
+  "mapping": {
+    "new_hls_component\\updated_weights.cpp": "new_hls_component",
+    "new_hls_component\\new_updated_weights.h": "new_hls_component",
+    "new_hls_component\\block_circulant.h": "new_hls_component",
+    "new_hls_component\\activation_LUT.h": "new_hls_component",
+    "new_hls_component\\lstm_new.h": "new_hls_component",
+    "new_hls_component\\block_circulant.cpp": "new_hls_component",
+    "new_hls_component\\lstm_new.cpp": "new_hls_component",
+    "new_hls_component\\lstm_tb.cpp": "new_hls_component",
+    "new_hls_component\\weights_dimensions.h": "new_hls_component",
+    "new_hls_component\\activation_LUT.cpp": "new_hls_component"
+  }
+}

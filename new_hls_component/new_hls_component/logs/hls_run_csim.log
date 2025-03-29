@@ -1,0 +1,207 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=updated_weights.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/updated_weights.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=weights_dimensions.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(14)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/weights_dimensions.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=new_updated_weights.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/new_updated_weights.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=lstm_new.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(16)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_new.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=block_circulant.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(17)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/block_circulant.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=block_circulant.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(18)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/block_circulant.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=activation_LUT.h' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(19)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/activation_LUT.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=activation_LUT.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(20)
+INFO: [HLS 200-10] Adding design file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/activation_LUT.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=lstm_tb.cpp' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/lstm_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=lstm_function' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xc7k160tfbg676-2L' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7k160t-fbg676-2L'
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(7)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=1ns' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(8)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1ns.
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=0' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component/hls_config.cfg(5)
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../lstm_tb.cpp in debug mode
+   Compiling ../../../../lstm_new.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../lstm_tb.cpp:1:
+In file included from ../../../../lstm_new.h:4:
+In file included from D:/xilinx/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../lstm_new.cpp:2:
+In file included from D:/xilinx/Vitis/2024.2/include/ap_fixed.h:9:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+Input[0] = -3
+Input[1] = -2.90234
+Input[2] = -2.80078
+Input[3] = -2.70312
+Input[4] = -2.60156
+Input[5] = -2.5
+Input[6] = -2.40234
+Input[7] = -2.30078
+Input[8] = -2.20312
+Input[9] = -2.10156
+Input[10] = -2
+Input[11] = -1.90234
+Input[12] = -1.80078
+Input[13] = -1.70312
+Input[14] = -1.60156
+Input[15] = -1.5
+Input[16] = -1.40234
+Input[17] = -1.30078
+Input[18] = -1.20312
+Input[19] = -1.10156
+Input[20] = -1
+Input[21] = -0.902344
+Input[22] = -0.800781
+Input[23] = -0.703125
+Input[24] = -0.601562
+Input[25] = -0.5
+Input[26] = -0.402344
+Input[27] = -0.300781
+Input[28] = -0.203125
+Input[29] = -0.101562
+Input[30] = 0
+Input[31] = 0.0976562
+Input[32] = 0.199219
+Input[33] = 0.296875
+Input[34] = 0.398438
+Input[35] = 0.5
+Input[36] = 0.597656
+Input[37] = 0.699219
+Input[38] = 0.796875
+Input[39] = 0.898438
+Input[40] = 1
+Input[41] = 1.09766
+Input[42] = 1.19922
+Input[43] = 1.29688
+Input[44] = 1.39844
+Input[45] = 1.5
+Input[46] = 1.59766
+Input[47] = 1.69922
+Input[48] = 1.79688
+Input[49] = 1.89844
+Input[50] = 2
+Input[51] = 2.09766
+Input[52] = 2.19922
+Input[53] = 2.29688
+Input[54] = 2.39844
+Input[55] = 2.5
+Input[56] = 2.59766
+Input[57] = 2.69922
+Input[58] = 2.79688
+Input[59] = 2.89844
+Input[60] = 3
+Input[61] = 3.09766
+Input[62] = 3.19922
+Input[63] = 3.29688
+LSTM Output: 
+Output[0] = 1
+Output[1] = -1
+Output[2] = -1
+Output[3] = 1
+Output[4] = -1
+Output[5] = -1
+Output[6] = 1
+Output[7] = 1
+Output[8] = -1
+Output[9] = 1
+Output[10] = 0
+Output[11] = 0
+Output[12] = 0
+Output[13] = 0
+Output[14] = 0
+Output[15] = 0
+Output[16] = 0
+Output[17] = 0
+Output[18] = 0
+Output[19] = 0
+Output[20] = 0
+Output[21] = 0
+Output[22] = 0
+Output[23] = 0
+Output[24] = 0
+Output[25] = 0
+Output[26] = 0
+Output[27] = 0
+Output[28] = 0
+Output[29] = 0
+Output[30] = 0
+Output[31] = 0
+Output[32] = 0
+Output[33] = 0
+Output[34] = 0
+Output[35] = 0
+Output[36] = 0
+Output[37] = 0
+Output[38] = 0
+Output[39] = 0
+Output[40] = 0
+Output[41] = 0
+Output[42] = 0
+Output[43] = 0
+Output[44] = 0
+Output[45] = 0
+Output[46] = 0
+Output[47] = 0
+Output[48] = 0
+Output[49] = 0
+Output[50] = 0
+Output[51] = 0
+Output[52] = 0
+Output[53] = 0
+Output[54] = 0
+Output[55] = 0
+Output[56] = 0
+Output[57] = 0
+Output[58] = 0
+Output[59] = 0
+Output[60] = 0
+Output[61] = 0
+Output[62] = 0.00390625
+Output[63] = 0
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 41.061 seconds; peak allocated memory: 163.160 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 50s

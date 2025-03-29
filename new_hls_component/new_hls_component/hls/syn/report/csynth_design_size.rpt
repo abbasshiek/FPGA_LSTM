@@ -1,0 +1,57 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 1,552        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  |   398        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |   269        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |   173        | user inline pragmas are applied                                                        |
+|               | (4) simplification          |   120        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 3,020        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 2,912        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 2,912        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 2,912        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 2,920        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 2,920        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 2,917        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 3,047        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 2,755        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 2,547        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 1,959        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
+| Function                            | Location                | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++-------------------------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
+| + lstm_function                     | lstm_new.cpp:29         | 1,552        | 120           | 2,920        | 2,755       | 1,959         |
+|  + get_lstm_weights_0_dimension...  | weights_dimensions.h:14 |    5         |               |              |             |               |
+|     get_dimensions<ap_fixed<16, ... | weights_dimensions.h:8  |    3         |               |              |             |               |
+|  + get_lstm_weights_1_dimension...  | weights_dimensions.h:18 |    5         |               |              |             |               |
+|     get_dimensions<ap_fixed<16, ... | weights_dimensions.h:8  |    3         |               |              |             |               |
+|  + get_lstm_weights_2_dimension...  | weights_dimensions.h:22 |    5         |               |              |             |               |
+|     get_dimensions<ap_fixed<16, ... | weights_dimensions.h:8  |    3         |               |              |             |               |
+|    convert_to_circulant             | block_circulant.cpp:8   |   29         |               |              |             |               |
+|    lookup_tanh                      | lstm_new.cpp:22         |  920         |               |              |             |               |
++-------------------------------------+-------------------------+--------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

@@ -1,0 +1,3 @@
+relativeroot=C:/Users/Abbas_Sheik/Desktop/LSTM_FPGA/new_hls_component
+original_argv=--mode hls --cosim --config C:\Users\Abbas_Sheik\Desktop\LSTM_FPGA\new_hls_component\hls_config.cfg --work_dir new_hls_component 
+
